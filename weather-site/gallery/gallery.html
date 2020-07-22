@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>East Idaho Skies | Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../preston/preston.html">Preston</a></li>
+                <li><a href="../soda-springs/soda-springs.html">Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <div id="gallery">
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="A cloudy sky" data-src="images/clouds.jpg"><figcaption>A cloudy sky</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="The moon in the evening" data-src="images/clouds2.jpg"><figcaption>The moon in the evening</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="A flash of lightning" data-src="images/flash.jpg"><figcaption>A flash of lightning</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="Fog in the forest" data-src="images/fog.jpg"><figcaption>Fog in the forest</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="A sunny day" data-src="images/landscape.jpg"><figcaption>A sunny day</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="Raindrops on a pond" data-src="images/rainpond.jpg"><figcaption>Raindrops on a pond</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="Puffy white clouds" data-src="images/sky.jpg"><figcaption>Puffy white clouds</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="The sun setting behind a tree" data-src="images/tree.jpg"><figcaption>The sun setting behind a tree</figcaption></figure>
+            <figure><img class="gallery-item" src="images/placeholder.jpg" alt="Stormy sunset" data-src="images/yellowstone.jpg"><figcaption>Stormy sunset</figcaption></figure>
+        </div>
+    </main>
+
+    <footer>
+        
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy; East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+                
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/datecalc.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>

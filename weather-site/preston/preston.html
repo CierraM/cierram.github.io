@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Idaho Skies | Preston</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../home/index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="../soda-springs/soda-springs.html">Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>East Idaho Skies | Preston</h2>
+        <div class="overlay-container">
+            <picture>
+                <source class="hero-image" media="(min-width: 1100px)"
+                    srcset="images/wdd230_image_franklinLarge1100.jpg">
+                <source class="hero-image" media="(min-width: 800px)" srcset="images/wdd230_image_medium800.jpg">
+                <source class="hero-image" media="(min-width: 500px)" srcset="images/wdd230_image_small500.jpg">
+                <img class="hero-image" src="images/wdd230_image_franklinOriginal.jpeg" alt="Hero image">
+            </picture>
+            <div id="weather-summary">
+                <h4>Weather Summary</h4>
+                <div id="weather-grid">
+                    <div id="weather-keys">
+                        <p>Currently:</p>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity: </p>
+                        <p>Wind Speed:</p>
+                    </div>
+                    <div id="weather-values">
+                        <!-- <p>Sunny</p>
+                        <p><span id="temp"></span>&#0176; F</p>
+                        <p id="windChillDiv"><span id="windChill"></span>&#0176; F</p>
+                        <p>69%</p>
+                        <p><span id="windSpeed">5</span> mph</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="forecast">
+            <h3>5 Day Forecast</h3>
+            <div id="forecast-table" class="content-box">
+                <!-- <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p> -->
+            </div>
+
+        </div>
+        <div id="events" class="content-box">
+            <h3>Upcoming Events</h3>
+            <div id="event-content">
+                <!-- <div id="event-dates">
+                    <p>00/00/00</p>
+                    <p>00/00/00</p>
+                    <p>00/00/00</p>
+                </div>
+                <div id="event-titles">
+                    <p>event1</p>
+                    <p>event2</p>
+                    <p>event3</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="content-box" id="article">
+            <div>
+                <h3>208 Redial: Pedro's home in 'Napoleon Dynamite' for sale in Preston</a></h3>
+                <p>
+                    <img id="article-img" src="images/team-spirit-2447163_640.jpg" alt="Placeholder image">A few years ago, Gary Jones bought a fixer-upper, a duplex on a quiet street in Preston, Idaho.
+
+                    "It's kind of an investment property for me," Jones said. "It's got a 2-bedroom apartment upstairs
+                    and a one-bedroom in the basement."
+
+                    Little did he know, the modest home would gain international attention, thanks to "Napoleon
+                    Dynamite," a low-budget film that quickly became a multi-million dollar smash hit in 2004.
+                    "We didn't know anything about the movie when we bought it," Jones said.<br><br>
+                    
+
+                    He purchased the duplex for $32,000 with the goal of selling it for $99,500, a 200% markup.
+
+                    "It was shown three times in the movie," Jones said. "It was Pedro's house and the main scene is
+                    when they did the bike jumps."
+
+                    Pedro plays Napoleon's best friend.
+
+                    His home is the backdrop for one of the most memorable scenes in the film, where Napoleon rides
+                    Pedro's sledgehammer bike over a small ramp in front of the home.
+
+                    But there's a bit of a buyer beware.
+
+                    Not only will you know this is Pedro's house, but so will every other Napoleon Dynamite fan who
+                    comes to town.
+
+                    It's listed as number 6 on the "Sweet Map of Napoleon's Preston."
+
+                    "It seems funny that there's so many people wanting to see Pedro's house," Terresa Taylor, Jones'
+                    next-door neighbor said.<br><br>
+                    <a
+                        href="https://www.ktvb.com/article/news/local/208/napoleon-dynomite-16-years-later-preston-idaho/277-b33300fe-54c7-4fbd-87dc-a4ad1e72fbbf" target="_blank">Read
+                        the rest of this story at ktvb.com</a>
+                        </p>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.57156715957!2d-111.95036498603193!3d42.09972565487519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590087806968!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <div class="contact-info">
+                <p class="strong">East Idaho Skies</p>
+                <p>30 N 1st E<br>Preston, ID 83263</p>
+                <p> &#9743; 999.999.9999</p>
+                <p> &#9993; eastidahoskies@skies.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                            alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                            alt="instagram logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png"
+                            alt="twitter logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy; East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+                <p>|</p>
+                <a href="https://openweathermap.org/">openweathermap.org</a>
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/townEvents.js"></script>
+</body>
+
+</html>

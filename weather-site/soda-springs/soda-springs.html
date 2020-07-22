@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Idaho Skies | Soda Springs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../preston/preston.html">Preston</a></li>
+                <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Soda Springs</h2>
+        <div class="overlay-container">
+            <picture>
+                <source class="hero-image" media="(min-width: 1100px)"
+                    srcset="images/wdd230_image_franklinLarge1100.jpg">
+                <source class="hero-image" media="(min-width: 600px)" srcset="images/wdd230_image_medium800.jpg">
+                <source class="hero-image" media="(min-width: 320px)" srcset="images/wdd230_image_small500.jpg">
+                <img class="hero-image" src="images/wdd230_image_franklinOriginal.jpeg" alt="Hero image">
+            </picture>
+            <div id="weather-summary">
+                <h4>Weather Summary</h4>
+                <div id="weather-grid">
+                    <div id="weather-keys">
+                        <p>Currently:</p>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity: </p>
+                        <p>Wind Speed:</p>
+                    </div>
+                    <div id="weather-values">
+                        <!-- <p>Sunny</p>
+                        <p><span id="temp"></span>&#0176; F</p>
+                        <p id="windChillDiv"><span id="windChill"></span>&#0176; F</p>
+                        <p>69%</p>
+                        <p><span id="windSpeed">5</span> mph</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="forecast">
+            <h3>5 Day Forecast</h3>
+            <div id="forecast-table" class="content-box">
+                <!-- <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <img src="images/sun.png" alt="It is sunny">
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p>
+                <p>75&#0176;</p> -->
+            </div>
+
+        </div>
+        <div id="events" class="content-box">
+            <h3>Upcoming Events</h3>
+            <div id="event-content">
+                <!-- <div id="event-dates">
+                    <p>00/00/00</p>
+                    <p>00/00/00</p>
+                    <p>00/00/00</p>
+                </div>
+                <div id="event-titles">
+                    <p>event1</p>
+                    <p>event2</p>
+                    <p>event3</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="content-box" id="article">
+            <div>
+                <h3>Country Superstar Shows Up on Big Screen at Local Drive-In Theatre</a></h3>
+                <p>
+                    <img id="article-img" src="images/drivein.jpg" alt="Drive in theater">Garth Brooks showed up on the big screen at a local drive-in over the weekend. 
+
+                    <br>The Idan-Ha' Drive-in Theatre in Soda Springs played over an hour of Garth Brooks on their screen for tailgaters. 
+                    
+                    <br>About 98 cars full of people showed up to watch the pre-recorded concert of Brooks. 
+                    
+                    <br>The owner of the drive-in theatre says it was similar to experiencing a movie at the drive-in. 
+                    
+                    <br>“We did our due diligence to maintain that six-foot social distancing if you will, so, but yeah it was kind of a fun night.  It did rain on us a little bit, right at first but it really sparked the enthusiasm when the ‘Thunder Rolls’ came on by Garth Brooks and it just made it real feeling and brought a lot of electricity in the air and people were singing and dancing.  It was crazy.  It was a pretty good time,” says Jared Davis, Idan-Ha Drive-In Theatre. 
+                    
+                    <br>The owner says he hopes they can do more of these types of shows again. <br><br>
+                    
+                        </p>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1593719210399!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="contact-info">
+                <p class="strong">East Idaho Skies</p>
+                <p>30 N 1st E<br>Preston, ID 83263</p>
+                <p> &#9743; 999.999.9999</p>
+                <p> &#9993; eastidahoskies@skies.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                            alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                            alt="instagram logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png"
+                            alt="twitter logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy; East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+                <p>|</p>
+                <a href="https://openweathermap.org/">openweathermap.org</a>
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/townEvents.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>East Idaho Skies | Home</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="../preston/preston.html">Preston</a></li>
+                <li><a href='../soda-springs/soda-springs.html'>Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cards">
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.57156715957!2d-111.95036498603193!3d42.09972565487519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590087806968!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="contact-info">
+                <p class="strong">East Idaho Skies</p>
+                <p>30 N 1st E<br>Preston, ID 83263</p>
+                <p>	&#9743; 999.999.9999</p>
+                <p>	&#9993; eastidahoskies@skies.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target= "_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy; East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/datecalc.js"></script>
+    <script src="js/townData.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

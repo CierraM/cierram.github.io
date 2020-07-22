@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>East Idaho Skies | Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../preston/preston.html">Preston</a></li>
+                <li><a href='../soda-springs/soda-springs.html'>Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset class="content-box">
+                <legend>Contact Information</legend>
+                <label class="item">Name*<input minlength="5" pattern="[A-Za-z ]+$" type="text" name="name"
+                        required></label>
+                <label class="item">Email<input type="email" name="email" placeholder="example@email.com"></label>
+                <label class="item">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="item">Zip Code*<input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset class=content-box>
+                <legend class="item">Storm Information</legend>
+                <label class="item">Storm Type<input list="stormtype"><datalist id="stormtype">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist></label>
+
+                <label class="item" id="range">Storm Severity<input type="range" name="severity" min="1" max="10"
+                        step="1" value="5" oninput="popcorn(this.value)" onchange="popcorn(this.value)"><span
+                        id="rating">5</span></label>
+
+                <label class="item">Region<select name="region">
+                        <option selected disabled>Please Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select></label>
+                <div class="item">Are you in Danger?</div>
+                <label class="item radio-label"><input class="radio" type="radio" name="danger" value="yes">Yes</label>
+                <label class="radio-label"><input class="radio" type="radio" name="danger" value="no">No</label>
+                <label class="radio-label"><input class="radio" type="radio" name="danger" value="maybe">Maybe</label>
+
+                <label class="item">Additional Information and Comments<textarea name="info" rows="4"
+                        cols="50"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Report Storm" class="submitbtn">
+        </form>
+    </main>
+
+    <footer>
+
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy; East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/datecalc.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
