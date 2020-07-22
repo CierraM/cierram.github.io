@@ -71,6 +71,9 @@ nav ul li a{
 
 #about-text{
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #cta{
