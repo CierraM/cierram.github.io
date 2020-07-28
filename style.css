@@ -1,12 +1,12 @@
 
 /* Colors */
 :root{
-    --background: #3a2d19;
-    --main-color: #d9cdbf;
-    --accent1: #d4edea;
-    --text: #3a2d19;
-    --h1: #d4edea;
-    --h3: #3a2d19;
+    --background: #000000;
+    --main-color: #ededed;
+    --accent1: #bebad3;
+    --text: var(--background);
+    --h1: var(--main-color);
+    --h3: #383256;
     --shadow-color: rgba(74,74,74,0.67);
 }
 
@@ -219,6 +219,21 @@ h1{
 .portfolio-item{
     max-width: 45vw;
 }
+
+.portfolio-item p{
+    height: 65px; /*This is enough for 4 lines*/
+}
+
+.overflow-hidden{
+    width: 100%;
+    height: 80%;
+}
+
+.overflow-hidden img{
+    overflow: hidden;
+}
+
+
 }
 
 
