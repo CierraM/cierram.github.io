@@ -212,6 +212,7 @@ input[type=submit]{
     padding: 20px;
     margin: 0 auto;
     border: none;
+    outline: none;
     background-color: var(--accent1);
     border-radius: 20px;
     margin-top: 15px;
@@ -220,6 +221,11 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
+input[type=submit]:active{
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.3)
+}
 /* Medium Screens */
 
 @media only screen and (min-width: 664px){
