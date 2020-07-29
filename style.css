@@ -153,6 +153,10 @@ footer p, footer a{
     max-width: 90%;
 }
 
+.description{
+    padding-bottom: 10px;
+}
+
 .portfolio-item img{
     max-width: 90%;
     display: block;
