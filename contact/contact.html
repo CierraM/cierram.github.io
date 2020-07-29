@@ -23,12 +23,16 @@
         <main>
             <h2 class="toph2">Contact Me</h2>
 
-            <form action="http://formspree.io/cierramorris09@gmail.com" method="POST">
-                <label>Your Email
-                    <input type="email" name="_replyto">
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdv0f27zb34S7RGP-3_
+            NEtrXdz-Y_IRRnoMXyBfb_an-n22fA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <label>Name*
+                    <input type="text" name="entry.477407005" id="entry.477407005" required>
                 </label>
-                <label>Your Message
-                    <textarea name="body"></textarea>
+                <label>Email*
+                    <input type="email" name="entry.885140404" id="entry.885140404" required>
+                </label>
+                <label>Message*
+                    <textarea name="entry.557612219" id="entry.557612219" required></textarea>
                 </label>
                 <input type="submit" value="Send Your Message">
             </form>
@@ -40,7 +44,16 @@
         <p>|</p>
         <a href="mailto: cierramorris09@gmail.com">CierraMorris09@gmail.com</a>
     </footer>
-
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
 </body>
 
 </html>

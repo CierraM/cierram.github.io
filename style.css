@@ -186,13 +186,16 @@ form label, form input, textarea{
     display: block;
 }
 
-input[type=email]{
+input[type=email], input[type=text]{
     width: 400px;
     padding: 5px;
     margin: 15px 0;
     margin-bottom: 30px;
     border-radius: 5px;
+    border: 1px solid grey;
 }
+
+
 
 textarea{
     font-family: "Merriweather";
