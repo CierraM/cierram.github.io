@@ -1,12 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Fredericka+the+Great&family=Montserrat&family=Poiret+One&family=Shadows+Into+Light&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya&family=Alegreya+Sans&family=Bad+Script&family=Fredericka+the+Great&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Nunito&family=Nunito+Sans&family=Poiret+One&family=Quattrocento&family=Quattrocento+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Shadows+Into+Light&family=Tenor+Sans&display=swap');
 /* Colors */
 :root{
     --background: #000000;
     --main-color: #ededed;
-    --accent1: #bebad3;
+    --accent1: #bdbdbd;
     --text: var(--background);
     --h1: var(--main-color);
-    --h3: #383256;
+    --h3: var(--background);
     --shadow-color: rgba(74,74,74,0.67);
 }
 
@@ -29,7 +31,16 @@ main{
 h1{
     color: var(--h1);
     text-align: center;
-   
+    font-family: "Poiret One";
+    font-size: 2.5rem;
+}
+
+h2, h3{
+    font-family: "Quattrocento";
+}
+
+p, a, li{
+    font-family: "Merriweather"
 }
 
 nav ul{
@@ -70,6 +81,7 @@ nav ul li a{
     display: block;
     margin: 0 auto;
     padding: 30px;
+    
 }
 
 #about-text{
@@ -89,6 +101,7 @@ nav ul li a{
     background-color: var(--accent1);
     border-radius: 20px;
     color: var(--text);
+    margin-top: 30px;
 }
 
 footer{
@@ -189,6 +202,7 @@ h1{
     padding: 0;
     height: 100%;
     width: 100%;
+    border: 10px double var(--background);
     
 }
 
@@ -205,7 +219,7 @@ h1{
 }
 
 #cta{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 
