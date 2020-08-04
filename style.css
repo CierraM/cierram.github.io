@@ -187,7 +187,7 @@ form label, form input, textarea{
 }
 
 input[type=email], input[type=text]{
-    width: 400px;
+    width: 90vw;
     padding: 5px;
     margin: 15px 0;
     margin-bottom: 30px;
@@ -200,7 +200,7 @@ input[type=email], input[type=text]{
 textarea{
     font-family: "Merriweather";
     margin: 15px 0;
-    width: 400px;
+    width: 90vw;
     height: 200px;
     padding: 10px;
     border-radius: 5px;
