@@ -73,7 +73,7 @@ function checkForWin(mark) {
         document.getElementById("whoseTurn").textContent = "It's a Tie."
         document.getElementById("grid").childNodes.forEach(element => {
             element.removeEventListener("click", addX)
-            document.getElementById("whoseTurn").style.color = "gold";
+            document.getElementById("whoseTurn").style.color = "brown";
         })
         return true
     }
@@ -88,7 +88,7 @@ function computerTurnEasy() {
     document.getElementById("whoseTurn").textContent = "Computer's Turn"
     setTimeout(() => {
         let cpuChoice //cpu generate # 0-8, check if spot is taken, if not, take it
-    
+        
         while (true){
         cpuChoice = Math.floor(Math.random() * 9)
         if (gameboard[cpuChoice] == 0){
