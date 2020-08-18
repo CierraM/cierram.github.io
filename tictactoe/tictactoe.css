@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cabin+Sketch:wght@700&family=Fredoka+One&display=swap');
+
+.box{
+    align-items: center;
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    background-color: mistyrose;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    font-family: "Fredoka One", sans-serif;
+    
+}
+h1, h2{
+    font-family: "Cabin Sketch", cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    margin-bottom:40px;
+    color: grey;
+}
+
+h2{
+    text-align: center;
+    color: gray;
+    font-size: 3rem;
+}
+
+
+#clearBoard{
+    display: none;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: mistyrose;
+    color: grey;
+    font-size: 1.2rem;
+}
+
+#clearBoard:hover{
+    cursor: pointer;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+#box1{
+    grid-area: box1;
+}
+
+#box2{
+    grid-area: box2;
+}
+
+#box3{
+    grid-area: box3;
+}
+
+#box4{
+    grid-area: box4;
+}
+
+#box5{
+    grid-area: box5;
+}
+
+#box6{
+    grid-area: box6;
+}
+
+#box7{
+    grid-area: box7;
+}
+
+#box8{
+    grid-area: box8;
+}
+
+#box9{
+    grid-area: box9;
+}
+
+
+#line{
+    grid-area: stroke;
+    background-color: green;
+}
+
+#grid{
+    background-color: white;
+    margin: 20px auto;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr;
+    grid-template-rows: 20fr 20fr 20fr;
+    grid-gap:10px;
+    grid-template-areas: 
+        "box1             box2          box3"
+        "box4             box5          box6"
+        "box7             box8          box9";
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: lightgrey;
+    padding-left: 15px;
+
+
+}
+
+nav ul li ul li{
+    border: none;
+    height: 100%;
+    color: lightgrey;
+}
+
+
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between; 
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+nav{
+    background-color: grey;
+    margin: 0;
+
+}
+
+body{
+    margin: 0;
+    background-color: mistyrose;
+}
+
+.difficulty{
+    height: 100%;
+    margin: 0;
+    border: none;
+    padding-right: 10px;
+    background-color: rgba(255, 228, 225, .5);
+}
+
+.difficulty:hover{
+    cursor: pointer;
+}

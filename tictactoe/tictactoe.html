@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Tic Tac Toe!</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../portfolio/portfolio.html">Back to Portfolio</a></li>
+            <li>
+                <ul>
+                    <li><button onclick=switchDifficulty() class="difficulty">easy</button></li>
+                    <li><button onclick=switchDifficulty() class="difficulty">hard</button></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Play Tic Tac Toe!</h1>
+        
+            <h2 id="whoseTurn">Your Turn</h2>
+            <button onclick="startOver()" id="clearBoard">Try Again</button>
+        
+        <div id="grid">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+
+        </div>
+        <div>
+            <div class="line" id="stroke1"></div>
+            <div class="line" id="stroke2"></div>
+            <div class="line" id="stroke3"></div>
+            <div class="line" id="stroke4"></div>
+        </div>
+    </main>
+
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>

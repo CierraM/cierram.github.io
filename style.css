@@ -306,6 +306,9 @@ h1{
     overflow: hidden;
 }
 
+form input, form textarea{
+    max-width: 50vw;
+}
 
 }
 
