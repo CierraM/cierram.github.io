@@ -370,4 +370,8 @@ p{
 .portfolio-item p{
     height: 95px; /*This is enough for 4 lines*/
 }
+
+form input, form textarea{
+    max-width: 30vw;
+}
 }
