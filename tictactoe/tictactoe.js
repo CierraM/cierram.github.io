@@ -3,37 +3,39 @@ let gameboard = [   //To keep track of the score.
     0, 0, 0,
     0, 0, 0,
 ]
-let mode = "easy"
 
-document.getElementById("grid").childNodes.forEach(element => {
+let gameOver = false
+
+
+
+    document.getElementById("grid").childNodes.forEach(element => {
     element.addEventListener("click", addX)
-})
+    }) 
+
+
 
 function addX(event) {
     // console.log('Id:', event.target.id)
     // document.getElementById(event.target.id).textContent = 'X' //this is the same as:
     if (!event.target.textContent){
         event.target.textContent = 'X'
+       
         let position = parseInt(event.target.id.substring(3,4)) //this is a number 1-9 indicating position on the board
         gameboard[position - 1] = 1
-        let gameOver = checkForWin(1) //should we continue the game?
-
-        if (!gameOver){
-            if (mode == "easy"){
-                document.getElementById("whoseTurn").textContent = ""
-                computerTurnEasy()
+        gameOver = checkForWin(1) //should we continue the game?
+        if (gameOver){
+            endGame()
         }
-            else{
-            computerTurnHard()
-        }}
         else{
-            document.getElementById("clearBoard").style.display = "block"
+            computerTurnEasy()
         }
     }
     
     //event.target is the element
 }
-
+function endGame() {
+    document.getElementById("clearBoard").style.display = "block"
+}
 function checkForWin(mark) {
     //check for each win situation
     if ((gameboard[0] == mark && gameboard[1] == mark && gameboard[2] == mark)
@@ -86,7 +88,7 @@ function checkForWin(mark) {
 
 function computerTurnEasy() {
     document.getElementById("whoseTurn").textContent = "Computer's Turn"
-    setTimeout(() => {
+    
         let cpuChoice //cpu generate # 0-8, check if spot is taken, if not, take it
         
         while (true){
@@ -97,24 +99,15 @@ function computerTurnEasy() {
             break
         }
         }
-        let gameOver = checkForWin(2)
+        gameOver = checkForWin(2)
         if (!gameOver){
             document.getElementById("whoseTurn").textContent = "Your Turn"
         }
         else{
             document.getElementById("clearBoard").style.display = "block"
         }
-    }, Math.random() * 1500) 
-}
+    }
 
-function computerTurnHard() {
-    //we need to check and see if the user is about to win
-    //then check and see if computer is about to win
-    //else just make mark next to one of own marks
-    //or place in the middle square
-    //or place anywhere else
-    
-}
 
 function startOver(){
     gameboard = [   

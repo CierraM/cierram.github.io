@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    /* primary */
+    --pale-violet: hsl(276, 100%, 81%); /*sub heading on app*/
+    --moderate-violet: hsl(276, 55%, 52%); /*chat on left*/
+    --desaturated-dark-violet: hsl(271, 15%, 43%); /*chat on right*/
+    --grayish-blue: hsl(206, 6%, 79%);  /*placeholder text*/
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%); /* main heading, submit button*/
+    --dark-grayish-violet: hsl(270, 7%, 64%); /* paragraph*/
+
+    /* gradients */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* secondary */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%); /*app background*/
+    --very-light-magenta:hsl(289, 100%, 72%); /*radio button outline*/
+    --phone-radius: 25px;
+
+}
+
+body{
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    
+}
+
+main{
+    background-color: white;
+    position: absolute;
+    margin: 0;
+    
+}
+
+.big-dark-purple{
+    width: 45%;
+    height: 500px;
+    background-image: linear-gradient(var(--light-magenta), var(--light-violet));
+    border-bottom-right-radius: 300px; 
+}
+
+.big-light-purple{
+
+    width: 45%;
+    height: 500px;
+    background-color: var(--light-grayish-violet);
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 300px;
+    padding-bottom: 50px;
+    
+   
+}
+
+h2{
+    text-align: center;
+    font-weight: light;
+
+}
+
+
+.phone{
+    position: absolute;
+    width: 270px;
+
+    margin: 0 auto;
+    top: 75px;
+    left: 25%;
+    background-color: white;
+    border-radius: var(--phone-radius);
+    box-shadow: 6px 9px 24px -7px var(--dark-grayish-violet);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.phone-screen{
+    background-color: var(--light-grayish-violet);
+    
+    margin: 0 auto;
+    border-radius: var(--phone-radius);
+    
+    margin: 10px;
+    
+}
+
+.phone-camera{
+    background-color: white;
+    height: 24px;
+    width: 55%;
+    margin: 0 auto;
+
+    border-radius: 0 0 15px 15px;
+}
+
+.chat-head{
+    background-image: linear-gradient( to left, var(--light-magenta), var(--light-violet));
+    border-radius: var(--phone-radius) var(--phone-radius) 0 0;
+    height: 15%;
+
+}
+
+
+
+.chat-head p, .chat-head h5{
+    color: white;
+
+}
+
+.chat-head p{
+    align-self: center;
+    
+}
+
+.chat-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr;
+}
+
+.chevron{
+    justify-self: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.avatar{
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.walker-heading{
+    align-self: center;
+    padding-left: 10px;
+}
+
+.walker-heading h5{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.walker-heading p{
+    margin: 0;
+    color:var(--pale-violet);
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.chat-bubble-purple{
+    background-color: hsl(287, 47%, 93%);
+    width: 55%;
+    padding: 10px;
+    border-radius: 10px 10px 10px 5px;
+    color: var(--moderate-violet);
+    font-size: 10px;
+    margin-left: 8px;
+}
+
+.chat-images{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+    
+}
+
+.dog-image{
+    width: 45px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.chat-bubble-white{
+    background-color: var(--white);
+    max-width: 55%;
+    padding: 10px;
+    border-radius: 10px 10px 5px 10px;
+    color: var(--desaturated-dark-violet);
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 8px;
+    box-shadow: 2px 3px 10px -7px var(--dark-grayish-violet);
+}
+
+.short{
+    width: 35%;
+    
+}
+
+.chat-price{
+    background-image: linear-gradient( to right, var(--light-magenta), var(--light-violet));
+    height: 40px;
+    max-width: 60%;
+    padding: 0 10px 0 10px;
+    border-radius: 10px 10px 10px 5px;
+    color: var(--moderate-violet);
+    font-size: 10px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    align-items: center;
+}
+
+.chat-price>*{
+    position: relative;
+    bottom: 5px;
+}
+
+.radio{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--very-light-magenta);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.price{
+    font-weight: 800;
+    font-size: 15px;
+    justify-self: end;
+}
+
+.reply-box{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
+    width: 90%;
+    height: 20px;
+    margin: 15px auto;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: var(--grayish-blue);
+}
+
+.reply-box p{
+    margin: 0;
+    padding-left: 10px;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+
+.submit{
+    color: white;
+    text-align: center;
+    background-color: var(--very-dark-desaturated-violet);
+    font-weight: 800;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 3px;
+
+}
+
+.right-screen{
+    margin-top: 250px;
+    position: relative;
+    
+    
+}
+
+.right-screen h2{
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--very-dark-desaturated-violet);
+}
+
+.right-screen p{
+    
+    text-align:center;
+    max-width: 75%;
+    margin: 0 auto;
+    color: var(--dark-grayish-violet);
+    line-height: 18pt;
+    margin-bottom: 50px;
+}
+
+.attribution{
+    background-color: black;
+}
+
+/* Large Screens */
+@media(min-width: 1000px){
+    main{
+        display: flex;
+    }
+
+    .right-screen{
+        width: 70%;
+        left: -15%;
+        
+    }
+
+    .right-screen p, .right-screen h2{
+        text-align: left;
+        margin-left: 450px;
+        
+    }
+
+    .big-dark-purple{
+        width: 40%;
+        border-radius: 0 0 60% 60%;
+        position: relative;
+        left: -15%;
+    }
+
+    .big-light-purple{
+        width: 25%;
+        margin-top: 200px;
+        height: 85vh;
+        
+    }
+
+    .phone{
+        margin-top: -20px;
+        left: 15%;
+        width: 300px;
+        
+    }
+
+}
+
+@media(min-width: 1300px){
+.right-screen{
+    width: 55%;
+    left: -25%;
+}
+
+}
