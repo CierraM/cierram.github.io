@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+body {
+  margin: 0;
+}
+
+.curtain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.curtain__panel {
+  background-image: url(theater-1308794_1920.jpg);
+  width: 50%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.curtain__prize {
+  background-image: url(cat-4282123_1920.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.curtain__panel--left {
+  -webkit-transform: translateX(-120%) skewX(10deg);
+          transform: translateX(-120%) skewX(10deg);
+}
+
+.curtain__panel--right {
+  -webkit-transform: translateX(120%) skewX(-10deg);
+          transform: translateX(120%) skewX(-10deg);
+}
+
+img {
+  display: block;
+  margin: 200px auto;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  text-align: right;
+  margin-top: 200px;
+  font-size: 6em;
+  color: white;
+}
+
+.curtain__panel--right p {
+  text-align: left;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
