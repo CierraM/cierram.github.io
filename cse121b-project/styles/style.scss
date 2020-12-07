@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&display=swap');
+$margin-top: 30px;
+$main-color: #fffced;
+$secondary-color: #fffced;
+$warning-color: #ec3f3f;
+$accent-color: rgb(243, 241, 146);
+$box-shadow: 5px 5px 15px -8px #000000;
+
+
+
+body {
+    background-image: url("../assets/image1.jpg");
+    background-size: cover;
+    font-family: "Merriweather", Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-sizing: border-box;
+}
+
+.to-do-list {
+    background-color: $main-color;
+    width: 66%;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: $margin-top;
+    box-shadow: $box-shadow;
+    min-height: 80vh;
+    grid-column: 2/3;
+}
+
+.to-do-list__title {
+    text-align: center;
+}
+
+.to-do-list__items{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.to-do-list__item{
+    margin-bottom: 10px;
+    font-family: "Indie Flower", cursive;
+}
+
+.to-do-list__item label input[type=text]{
+    border:none;
+    background-color: $secondary-color;
+    width: 90%;
+    font-size: 1.5em;
+    font-family: "Indie Flower", cursive;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.to-do-list__item label input[type=checkbox]:checked + input[type=text]{
+    text-decoration: line-through;
+}
+
+.sidebar{
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-top: $margin-top;
+}
+
+.btn{
+    display: block;
+    width: 50%;
+    margin: 0 10px 10px auto;
+    border: none;
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    box-shadow: $box-shadow;
+}
+
+.clearCheckedBtn{
+    background-color: $accent-color;
+    height: 40px;
+    font-size: 1em;
+}
+
+.clearAllBtn{
+    background-color: $warning-color;
+    width: 40%;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -8px #000000;
+}
+
+.to-do-list__add{
+    width: 150px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    background-color:$accent-color;
+    box-shadow: $box-shadow;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 5px 5px 10px -8px #000000;
+    }
+}

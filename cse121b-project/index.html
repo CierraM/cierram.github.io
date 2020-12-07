@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="to-do-list">
+        <h1 class="to-do-list__title">To Do</h1>
+        <ul class="to-do-list__items" id="to-do-list__items">
+            <!-- <li class="to-do-list__item">
+                <label for="check1" >
+                    <input type="checkbox" id="check1">
+                    <input type="text" placeholder="Item 1... id="item1">
+                </label>
+            </li> -->
+        </ul>
+        <button class="to-do-list__add" id="plus">+ Add Item</button>
+    </div>
+    <div class="sidebar">
+        <button type="button" id="clearCheckedBtn" class="clearCheckedBtn btn">Clear Checked</button>
+        <button type="button" onclick="reset()" class="clearAllBtn btn">Clear All</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
