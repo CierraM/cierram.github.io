@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beautiful, maintainable, and user friendly websites">
+    <meta name="keywords" content="website development, web development, websites for small business, 
+    Cierra Morris portfolio, website maintenance, web apps, web design, web designers, portfolio, graphic design, 
+    programming">
+    <meta name="author" content="Cierra Morris">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Cierra Morris | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#intro">Intro</a>
+            <a href="#portfolio">My Work</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <div class="shape-wrapper">
+            <div class="shape"></div>
+            <div class="shape-2"></div>
+        </div>
+        <section id="intro">
+            <div class="intro-wrapper indent">
+                <h1><span class="cursive">Hi, I'm Cierra</span><br>I develop interactive websites.</h1>
+                <p class="intro-paragraph">
+                    A website is one of the most important investments you can make for your business. 
+                    A well-designed site establishes credibility, attracts new customers, and helps retain current ones. 
+                    Whether you are a small business or a larger company, let me help create and maintain your website or web app. 
+                    I believe in creating websites that are easy to maintain, beautiful, and user friendly.
+                    I also offer graphic design services as needed.
+                    Send me a message and let's get started today!
+                
+                </p>
+                <a class="button " href="#portfolio">View My Work!</a>
+                <a class="button " href="#contact">Let's get in touch!</a>
+
+            </div>
+            <div class="scroll-prompt-wrapper"></div>
+            <a href="#portfolio" class="scroll-prompt">(Scroll down to see more!)<br><span>&#8964;</span></a>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="portfolio-wrapper">
+                <div class="grid-wrapper">
+                    <h2 class="">Stuff I've Made</h2>
+                    <p class="">Here's a sample of projects I've worked on. Click on one of the squares below to explore.</p>
+                    <div class="portfolio-grid" id="root">
+               
+                    </div>
+                </div>
+                <aside class="skills" id="skills">
+                    <h3>Skills</h3>
+                    <hr>
+                    <ul>
+
+                    </ul>
+                </aside>
+            </div>
+            <div class="scroll-prompt-wrapper">
+            <a href="#contact" class="scroll-prompt">(Contact me for more info!)<br><span>&#8964;</span></a>
+        </div>
+        </section>
+
+
+
+        <section id="contact">
+
+            <form action="https://formspree.io/f/xjvjjwap" method="POST" class="indent">
+
+
+                <div class="form-section-1">
+                    <h2 class="contact-heading">Let's Get in Touch!</h2>
+                    <label for="name">Your Name*</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Your Email*</label>
+                    <input type="email" name="_replyto" id="email" required>
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="message">Your Message*</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit" class="button contact-button" id="submit">Send Your Message</button>
+
+                </div>
+                <div class="social">
+
+                    <p>You can also <a href="https://www.linkedin.com/in/cierra-morris-9308a5194/" target="_blank">find
+                            me on LinkedIn!</a></p>
+                    <a href="https://www.linkedin.com/in/cierra-morris-9308a5194/" target="_blank"><img
+                            src="/images/LI-In-Bug.png" alt="LinkedIn Logo"></a>
+                </div>
+            </form>
+            <footer>
+                <span id="copyright"></span>
+                <a href="mailto: cierra.morris09@gmail.com">cierra.morris09@gmail.com</a>
+                <a href="#intro">Back to the top</a>
+            </footer>
+        </section>
+    </main>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/shuffle.js"></script>
+
+</body>
+
+</html>
