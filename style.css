@@ -150,7 +150,7 @@ nav a{
     width: 400px;
     margin: 0 auto;
     padding-bottom: 20px;
-    color: #f73669;
+    color: white;
     text-decoration: none;
     display: block;
     bottom: 40px;
@@ -288,7 +288,9 @@ input:focus, textarea:focus {
     margin: 20px 0 0 20px;
 }
 
-
+.back {
+    color: rgb(255, 95, 95);
+}
 
 .grid-square:hover{
     cursor:pointer;
@@ -409,6 +411,10 @@ footer {
     max-width: 300px;
     max-height: 300px;
     object-fit: cover;
+}
+
+.info-panel a {
+    color: white;
 }
 
 .info-panel-link {

@@ -1,0 +1,61 @@
+<head>
+
+</head>
+<body>
+
+	<form action="/action_page.php">
+     <span id="fontTest">   
+     
+   Sample Text
+     </span><br><br>   
+    
+    
+   <p> <input onchange="ChangeText()" type="text" id="TextEntered" name="FontType" value="Enter Text"></p><br>
+   
+    
+
+</form>
+ 
+
+ 
+    <select onchange="ChangeFont (this);" size="7">
+        <option />gill
+        <option />helvetica
+        <option />cursive
+        <option />fantasy
+        <option selected="selected" />serif
+        <option />sans-serif
+        <option />monospace
+    </select>
+    <script type="text/javascript">
+        function ChangeFont (selectTag) {
+            // Returns the index of the selected option
+            var whichSelected = selectTag.selectedIndex;
+
+            // Returns the selected options values
+            var selectState = selectTag.options[whichSelected].text;
+
+            var fontTest = document.getElementById ("fontTest");
+            fontTest.style.fontFamily = selectState;
+            
+            
+           
+                       
+                    
+        }
+        
+        function ChangeText(){
+         var TextEntered = document.getElementById("TextEntered").value;
+            //TextEntered.style.fontFamily = selectState;
+            
+         var fontTest = document.getElementById("fontTest")
+         
+         fontTest.textContent=TextEntered;
+        
+        }
+        
+        document.getElementById("TextEntered").addEventListener("change", ChangeText)
+    </script>
+</body>
+
+document.getElementById("textEntered").addEventListener("change", ChangeText)
